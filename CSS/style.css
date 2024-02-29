@@ -1,0 +1,871 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Noto+Sans:wght@100;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  /* font-family: "Noto Sans", sans-serif; */
+  /* background-color: #eeeded; */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+ul li a {
+  color: #3d3d3d;
+}
+
+/* Nav Section Start */
+.profile .profile_img_container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: black;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.profile .profile_img_container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.profile {
+  cursor: pointer;
+}
+
+/* Hero Section Start */
+#heroSection {
+  background-image: linear-gradient(to right, #1E1F31, #1E1F31);
+}
+
+.strongHero1 {
+  color: #5affd6;
+}
+.strongHero2 {
+  color: #ffd95a;
+  font-size: medium;
+}
+.hero-details {
+ color: #fffdfd; /* Change this to the color you want */
+}
+
+
+/* Feature Section Start */
+.blog-card {
+  border-radius: 5px;
+  margin: 10px 20px;
+}
+
+.card-banner {
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-banner img {
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #4d4d4d;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 15px;
+}
+
+ul.splide__pagination.splide__pagination--ltr {
+  bottom: -2.5em;
+}
+
+.splide__progress {
+  margin-top: 30px;
+}
+
+/* Lately Section Start */
+#loadMoreBtn {
+  transition: ease 0.3s;
+  /* background: #d8d8d8; */
+}
+
+#loadMoreBtn:hover {
+  background: #4d4d4d;
+  color: antiquewhite;
+}
+
+/* Footer Section Start */
+
+.footer-widgets-area {
+  padding: 120px 0 70px;
+}
+
+.widget {
+  margin-bottom: 50px;
+}
+
+.widget-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.widget.address-widget p {
+  margin-bottom: 20px;
+}
+
+.widget.nav-widget li {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.widget.nav-widget li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.widget.nav-widget li a:hover {
+  padding-left: 8px;
+}
+
+.widget.newsletter-widget {
+  text-align: center;
+}
+
+.widget.newsletter-widget p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.widget.newsletter-widget form {
+  position: relative;
+}
+
+.widget.newsletter-widget form input {
+  padding-right: 120px;
+  padding-left: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 14px;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid #afafaf;
+}
+
+.widget.newsletter-widget form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0px 18px;
+  border-radius: 5px;
+  border: 1px solid #afafaf;
+  transition: all 0.5s;
+}
+
+.widget.newsletter-widget form button:hover {
+  background: #3d3d3d;
+  color: white;
+}
+
+.footer-copyright-area {
+  padding: 50px 0;
+  border-top: 1px solid #e5e5e5;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-copyright-area::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  width: 1px;
+  height: 100%;
+  background: #e5e5e5;
+  z-index: -1;
+}
+
+.social-links ul {
+  display: flex;
+  font-size: 14px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.social-links ul li {
+  margin-right: 10px;
+}
+
+.social-links ul li.title {
+  margin-right: 20px;
+  color: #000;
+  font-weight: 600;
+}
+
+.social-links ul li:last-child {
+  margin-right: 0;
+}
+
+.social-links ul a {
+  color: #3d3d3d;
+}
+
+.social-links ul a:hover {
+  color: #3d3d3d;
+  font-weight: bold;
+}
+
+.footer-copyright-area .copyright-text {
+  font-size: 14px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .blog-card {
+    border-radius: 5px;
+    margin: 0px 0px;
+  }
+
+  .card-banner {
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .card-title {
+    font-size: 15px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+}
+
+/* 
+=======================================================================
+This CSS code for First Part
+Start from here 
+========================================================================
+*/
+#nav-item {
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  /* display: flex;
+  justify-content: space-between;*/
+}
+
+
+#nav-item {
+  font-family: Space Grotesk;
+  background-color: #1E1F31;
+  overflow-x: hidden;
+}
+
+#nav-item {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#nav-item wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#nav-item header {
+  padding: 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-item header ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0px;
+}
+
+#nav-item header ul li a {
+  color: #aba9b4;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all ease 0.5s;
+  font-size: 18px;
+}
+
+#nav-item header ul li a:hover {
+  color: #f09053;
+}
+
+#nav-item header ul li a.btn {
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f09053;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all ease 0.5s;
+}
+
+#nav-item header ul li a.btn:hover {
+  background-color: #615c59;
+}
+
+/* Logo CSS */
+.text-primary {
+  color: #DB6574 !important;
+}
+
+a.text-primary:focus,
+a.text-primary:hover {
+  color: #d13c4f !important;
+}
+
+/* Logo CSS */
+.text-primary2 {
+  color: #ffffff !important;
+}
+
+a.text-primary2:focus,
+a.text-primary2:hover {
+  color: #ffffff !important;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 100px 0;
+}
+
+.text {
+  width: 50%;
+  padding-right: 150px;
+}
+
+.text p {
+  font-size: 20px;
+  line-height: 46px;
+  color: #fff;
+}
+
+.text p span {
+  color: #f09053;
+  font-size: 24px;
+}
+
+.text a {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  padding: 18px 30px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-top: 60px;
+}
+
+.text a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #f09053;
+  z-index: -1;
+  transition: all ease 0.5s;
+}
+
+.text a:hover:before {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* Rotational Image CSS Start */
+.img {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(520px, #f08f538c, transparent 50%);
+  margin-top: -50px;
+}
+
+.rotated-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.social-icons {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  height: 25vw;
+  width: 25vw;
+  animation: rotation 60s linear infinite;
+  -webkit-animation: rotation 60s linear infinite;
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+.social-icons img {
+  position: absolute;
+  width: 70px;
+  /* Adjust as needed */
+  height: 70px;
+  /* Adjust as needed */
+  animation: rotateAround 5s linear infinite;
+}
+
+/* @keyframes rotateAround {
+  from {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+
+  to {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+} */
+
+.social-icons img:nth-child(1) {
+  top: 0;
+  left: 40%;
+}
+
+.social-icons img:nth-child(2) {
+  top: 25%;
+  right: 0;
+}
+
+.social-icons img:nth-child(3) {
+  top: 70%;
+  left: 70%;
+}
+
+.social-icons img:nth-child(4) {
+  top: 25%;
+  left: 0;
+}
+
+.social-icons img:nth-child(5) {
+  top: 70%;
+  left: 10%;
+}
+
+/* Rotational Image CSS End */
+
+/*
+---------------------------------------------------------------------
+This CSS code for Home Page All Animation 
+End here
+--------------------------------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------------------------------
+This CSS Code For Navbar style 
+Start Here  
+---------------------------------------------------------------------
+*/
+/* SUBMENU */
+#nav-item ul ul {
+  max-width: 100%;
+  /* Adjusted to cover the full width */
+  position: absolute;
+  padding: 10px 0;
+  opacity: 0;
+  z-index: -9999;
+  transition: all ease 0.5s;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Adjusted for 6 rows */
+  grid-gap: 10px;
+  /* Adjusted for spacing between items */
+}
+
+#nav-item ul li:hover ul {
+  opacity: 1;
+  z-index: 1;
+  padding: 30px 0;
+}
+
+#nav-item ul ul li {
+  width: 100%;
+  /* Each item spans the full width of a column */
+  box-sizing: border-box;
+}
+
+#nav-item ul ul li a {
+  display: block;
+  padding: 20px;
+  background-color: #383a58;
+  color: #fff;
+  border-radius: 10px;
+}
+
+#nav-item ul ul li a:hover {
+  background-color: #f09053;
+}
+
+/* NAVIGATION */
+#nav-item nav a {
+  position: relative;
+  font-size: 15px;
+  font-weight: 300;
+  color: #c8d1fa;
+  text-decoration: none;
+  padding: 6px 20px;
+  transition: 0.5s;
+}
+
+#nav-item nav a:hover {
+  color: rgb(237, 45, 138);
+}
+
+#nav-item nav a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-bottom: 5px solid rgb(109, 204, 235);
+  border-radius: 15px;
+  transform: scale(0) translateY(50px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#nav-item nav a:hover span {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+/*
+---------------------------------------------------------------------
+This CSS Code For Navbar style 
+End Here  
+---------------------------------------------------------------------
+*/
+/*
+---------------------------------------------------------------------
+This CSS Code For Profile Icon System Nav style 
+Start Here  
+---------------------------------------------------------------------
+*/
+
+#nav-item nav a.profile-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+#nav-item nav a.profile-link img {
+  margin-right: 0px;
+}
+
+#nav-item nav a.profile-link .profile-name {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+#nav-item nav a.profile-link:hover .profile-name {
+  display: block;
+}
+
+/*
+---------------------------------------------------------------------
+This CSS Code For Profile Icon System Nav style 
+End Here  
+---------------------------------------------------------------------
+*/
+/*
+---------------------------------------------------------------------
+Rotational Triangle CSS Code 
+Start Here
+---------------------------------------------------------------------
+*/
+
+.shape img {
+  position: absolute;
+  height: max-content;
+  width: 100%;
+  z-index: -2;
+}
+
+.shape .shape1 {
+  right: 700px;
+  top: 300px;
+  width: 450px;
+  opacity: .5;
+  transform-origin: center;
+  animation: shape linear 10s infinite reverse;
+}
+
+.shape .shape2 {
+  left: -70px;
+  bottom: -50px;
+  width: 450px;
+  opacity: .5;
+  transform-origin: center;
+  animation: shape linear 30s infinite reverse;
+}
+
+@keyframes shape {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.shape .shape3 {
+  top: 0;
+  left: 0;
+  width: 250px;
+  opacity: .4;
+  transform-origin: center;
+  animation: shape3 linear 20s infinite;
+  transform: translate(-200px, -100px) rotate(0deg);
+}
+
+@keyframes shape3 {
+  100% {
+    transform: translate(1300px, 600px) rotate(360deg);
+  }
+}
+
+.shape .shape4 {
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  opacity: .4;
+  transform-origin: center;
+  animation: shape4 linear 20s infinite 5s;
+  transform: translate(700px, 80px) rotate(0deg);
+}
+
+@keyframes shape4 {
+  100% {
+    transform: translate(1200px, -800px) rotate(360deg);
+  }
+}
+
+.shape .shape5 {
+  left: 500px;
+  top: 0;
+  width: 100px;
+  opacity: 0;
+  transform-origin: center;
+  animation: shape5 linear 25s infinite;
+  transform: translate(0, -150px) rotate(0deg);
+}
+
+@keyframes shape5 {
+  100% {
+    opacity: 1;
+    transform: translate(0, 800px) rotate(720deg);
+  }
+}
+
+.shape .shape6 {
+  right: 200px;
+  top: 300px;
+  width: 250px;
+  opacity: .2;
+  transform-origin: center;
+  animation: shape linear 30s infinite reverse;
+
+}
+
+/*
+---------------------------------------------------------------------
+Rotational Triangle CSS Code 
+End Here
+---------------------------------------------------------------------
+*/
+/*
+---------------------------------------------------------------------
+About Us CSS
+Star Here
+---------------------------------------------------------------------
+*/
+/* 
+.about-us {
+  text-align: center;
+  opacity: nav a hover;
+  transform: translateY(0);
+  transition: opacity 0.5s, transform 0.5s;
+  z-index: 2;
+  visibility: auto;
+  /* display: none;
+  overflow: auto;
+}
+
+.about-us.show {
+  opacity: 0;
+  transform: translateY(0);
+}
+
+.about-us h2 {
+  font-size: 30px;
+  color: #dd3232;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 16px;
+  color: #f2f4f5;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.about-us .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #3498db;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.about-us .btn:hover {
+  background-color: #c2c6c9;
+} */
+
+
+/*
+---------------------------------------------------------------------
+About Us CSS
+End Here
+---------------------------------------------------------------------
+*/
+
+/* 
+=======================================================================
+This CSS code for Wave Design
+Start from here 
+========================================================================
+*/
+/* .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.wave:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/wave.svg) repeat-x;
+  background-size: cover;
+  background-position: -1000px 0;
+  opacity: .2;
+  animation: waveOne 30s linear infinite;
+}
+
+@keyframes waveOne {
+  50% {
+    background-position: 0 0;
+  }
+}
+
+.wave:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/wave.svg) repeat-x;
+  background-size: cover;
+  background-position: 2732px 0;
+  opacity: .3;
+  animation: waveOne 120s linear infinite;
+} */
+
+/* 
+=======================================================================
+This CSS code for Wave Design
+End from here 
+========================================================================
+*/
+/* Carousel styles */
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .carousel-item .lately-blog-card {
+  /* Add any additional styles for the cards within the carousel */
+ }
+ 
+ /* Carousel controls */
+ .carousel-control-prev,
+ .carousel-control-next {
+  /* Style the carousel controls */
+ }
+ 
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+  /* Style the carousel control icons */
+ }
